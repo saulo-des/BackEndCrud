@@ -1,0 +1,42 @@
+//Teste de requisição no usuario
+
+@baseUrl = http://localhost:4000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNWY2YzhjOWMxZmMyOGFiZDZlOTQxYjIyIn0sImlhdCI6MTYwNDk0NDU5NCwiZXhwIjoxNjA0OTY2MTk0fQ.PkdxuRBWqiYjn58O6mOUFHuQzPavC29ziw-oyJovpO4
+@id = 1cf129h36n97di2973or36epi
+###
+//Obtendo usuario
+GET {{baseUrl}}/usuario
+Content-Type: application/json
+x-access-token: {{token}}
+
+###
+//Obtendo 
+GET {{baseUrl}}/usuario/{{id}}
+Content-Type: application/json
+x-access-token: {{token}}
+
+###
+//Inserindo 
+POST {{baseUrl}}/usuario
+Content-Type: application/json
+x-access-token: {{token}}
+
+{"descricao":"Saulo",
+"quantidade": "33",
+"email":"saulo@hotmail.com"}
+
+###
+//Removendo 
+DELETE {{baseUrl}}/usuario/{{id}}
+Content-Type: application/json
+x-access-token: {{token}}
+
+###
+//Alterando 
+PUT {{baseUrl}}/usuario
+Content-Type: application/json
+x-access-token: {{token}}
+
+{"descricao":"Saulo",
+"quantidade": "33",
+"email":"saulo@hotmail.com"}
