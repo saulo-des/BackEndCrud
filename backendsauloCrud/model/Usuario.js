@@ -1,4 +1,4 @@
-//cSpell:ignore descricao, codigobarra, preco
+//cSpell:ignore descricao, usuarios
 const mongoose = require('mongoose')
 
 const UsuarioSchema = mongoose.Schema({

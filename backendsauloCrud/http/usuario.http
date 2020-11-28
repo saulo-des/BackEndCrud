@@ -21,8 +21,8 @@ POST {{baseUrl}}/usuario
 Content-Type: application/json
 x-access-token: {{token}}
 
-{"descricao":"Saulo",
-"quantidade": "33",
+{"nome":"Saulo",
+"idade": "33",
 "email":"saulo@hotmail.com"}
 
 ###
@@ -37,6 +37,6 @@ PUT {{baseUrl}}/usuario
 Content-Type: application/json
 x-access-token: {{token}}
 
-{"descricao":"Saulo",
-"quantidade": "33",
+{"nome":"Saulo",
+"idade": "33",
 "email":"saulo@hotmail.com"}

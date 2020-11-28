@@ -17,9 +17,6 @@ router.get("/", auth, async(req, res) => {
 //Incluindo
 
 router.post("/",
-[
-    check("nome", "Informe o nome do usuario").not().isEmpty(),    
-],
 async(req, res) => {
     const errors = validationResult(req)
     if(!errors.isEmpty()){
